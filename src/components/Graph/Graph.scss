@@ -1,0 +1,25 @@
+.graph {
+	display: block;
+
+	margin: auto;
+}
+
+.grid_line {
+	stroke-width: 0.125px;
+
+	fill: none;
+	stroke: rgba(0, 0, 0, 0.125);
+}
+
+.graph_line {
+	stroke-width: 0.5px;
+
+	fill: none;
+}
+
+.color_point {
+	stroke-width: 1.5px;
+
+	filter: url(#shadow);
+	stroke: white;
+}

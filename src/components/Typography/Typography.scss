@@ -1,0 +1,125 @@
+@import '../../theme';
+
+$primary-color-on-light: rgba(var(--color-0), 1);
+$secondary-color-on-light: rgba(var(--color-1), 1);
+$primary-color-on-dark: rgba(var(--color-6), 1);
+$secondary-color-on-dark: rgba(var(--color-5), 1);
+
+.on_light {
+	color: $primary-color-on-light;
+}
+
+.on_dark {
+	color: $primary-color-on-dark;
+}
+
+.title {
+	font-size: 72pt;
+	font-weight: 400;
+	letter-spacing: 0pt;
+	line-height: 1;
+	margin-block-start: 24pt;
+	margin-block-end: 12pt;
+
+	font-family: $font-stack-display;
+}
+
+.heading {
+	font-size: 30pt;
+	font-weight: 700;
+	letter-spacing: 0pt;
+	line-height: 1.25;
+	margin-block-start: 16pt;
+	margin-block-end: 8pt;
+
+	font-family: $font-stack-display;
+
+	&.on_light {
+		color: $secondary-color-on-light;
+	}
+	&.on_dark {
+		color: $secondary-color-on-dark;
+	}
+}
+
+.subheading {
+	font-size: 20pt;
+	font-weight: 700;
+	letter-spacing: 0.018em;
+	line-height: 1.333;
+	margin-block-start: 12pt;
+	margin-block-end: 6pt;
+
+	font-family: $font-stack-body;
+
+	&.on_light {
+		color: $secondary-color-on-light;
+	}
+	&.on_dark {
+		color: $secondary-color-on-dark;
+	}
+}
+
+.body {
+	font-size: 12pt;
+	font-weight: 400;
+	letter-spacing: 0pt;
+	line-height: 1.75;
+	margin-block-start: 4pt;
+	margin-block-end: 8pt;
+
+	font-family: $font-stack-body;
+}
+
+.code {
+	display: block;
+
+	font-size: 12pt;
+	font-weight: 400;
+	letter-spacing: 0pt;
+	line-height: normal;
+	margin-block-start: 4pt;
+	margin-block-end: 4pt;
+
+	font-family: $font-stack-display;
+}
+
+.button {
+	font-size: 12pt;
+	font-weight: 700;
+	letter-spacing: 0.018em;
+	line-height: 1.333;
+
+	font-family: $font-stack-body;
+}
+
+.label {
+	white-space: nowrap;
+
+	font-size: 12pt;
+	font-weight: 400;
+	letter-spacing: 0pt;
+
+	font-family: $font-stack-body;
+	user-select: none;
+}
+
+.logotype {
+	display: block;
+
+	font-size: 12pt;
+	font-weight: 700;
+	letter-spacing: 0pt;
+	line-height: normal;
+	margin-block-start: 4pt;
+	margin-block-end: 4pt;
+
+	font-family: $font-stack-display;
+
+	&.on_light {
+		color: $secondary-color-on-light;
+	}
+	&.on_dark {
+		color: $secondary-color-on-dark;
+	}
+}

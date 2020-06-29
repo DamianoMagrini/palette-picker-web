@@ -1,0 +1,51 @@
+{
+	"name": "palette-picker",
+	"description": "An app that generates a monochrome palette from a color.",
+	"version": "1.0.0",
+
+	"authors": "Damiano Magrini <damiano.magrini@gmail.com>",
+	"license": "CC-BY-NC-SA-4.0",
+
+
+	"scripts": {
+		"start": "webpack-dev-server --config-name development --open",
+
+		"dist": "run-s dist:clean dist:build",
+		"dist:clean": "rimraf dist",
+		"dist:build": "webpack --config-name production"
+	},
+
+
+	"dependencies": {
+		"preact": "latest",
+		"uuid": "latest"
+	},
+
+	"devDependencies": {
+		"@types/html-webpack-plugin": "latest",
+		"@types/node": "latest",
+		"@types/optimize-css-assets-webpack-plugin": "latest",
+		"@types/uuid": "latest",
+		"@types/webpack": "latest",
+		"@types/webpack-dev-server": "latest",
+
+		"html-webpack-plugin": "latest",
+		"extract-css-chunks-webpack-plugin": "latest",
+		"optimize-css-assets-webpack-plugin": "latest",
+
+		"css-loader": "latest",
+		"sass-loader": "latest",
+		"style-loader": "latest",
+		"ts-loader": "latest",
+
+		"webpack": "latest",
+		"webpack-cli": "latest",
+		"webpack-dev-server": "latest",
+
+		"node-sass": "latest",
+		"npm-run-all": "latest",
+		"rimraf": "latest",
+		"ts-node": "latest",
+		"typescript": "latest"
+	}
+}

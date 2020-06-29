@@ -1,0 +1,10 @@
+@import '../../theme';
+
+.container {
+	display: inline-block;
+
+	border-radius: $border-radius-lg;
+	height: 72px;
+	margin: 4px;
+	width: 72px;
+}

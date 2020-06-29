@@ -1,0 +1,1 @@
+export { PalettePage } from './Palette';

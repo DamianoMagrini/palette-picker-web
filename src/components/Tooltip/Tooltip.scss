@@ -1,0 +1,79 @@
+@import '../../theme';
+
+$tooltip-spacing: calc(100% + 4px);
+
+.container {
+	position: relative;
+
+	height: fit-content;
+	width: fit-content;
+}
+
+.tooltip {
+	display: inline-block;
+	position: absolute;
+	visibility: hidden;
+
+	border-radius: 6px;
+	left: 50%;
+	padding: 6px 8px;
+
+	backdrop-filter: blur(5px);
+	background-color: rgba(var(--color-0), 0.8);
+	color: white;
+	transform: translateX(-50%);
+
+	animation: tooltip_animation_reverse $transition-flash 0ms 1 normal forwards;
+
+	&.visible {
+		animation: tooltip_animation_forwards $transition-short 0ms 1 normal forwards;
+	}
+
+	&.top {
+		bottom: $tooltip-spacing;
+	}
+	&.bottom {
+		top: $tooltip-spacing;
+	}
+}
+
+@keyframes tooltip_animation_forwards {
+	from {
+		visibility: hidden;
+		opacity: 0;
+		transform: translateX(-50%) translateY(10%) scale(0.95);
+	}
+
+	1% {
+		visibility: visible;
+		opacity: 0;
+		transform: translateX(-50%) translateY(10%) scale(0.95);
+	}
+
+	to {
+		visibility: visible;
+		opacity: 1;
+		transform: translateX(-50%);
+	}
+}
+
+// Because of meddling with visibility, I can't just play the other animation in reverse.
+@keyframes tooltip_animation_reverse {
+	from {
+		visibility: visible;
+		opacity: 1;
+		transform: translateX(-50%);
+	}
+
+	99% {
+		visibility: visible;
+		opacity: 0;
+		transform: translateX(-50%) translateY(10%) scale(0.95);
+	}
+
+	to {
+		visibility: hidden;
+		opacity: 0;
+		transform: translateX(-50%) translateY(10%) scale(0.95);
+	}
+}

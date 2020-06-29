@@ -1,0 +1,35 @@
+@import '../../theme';
+
+.picker_container {
+	display: flex;
+
+	align-items: center;
+}
+
+.input {
+	border: none;
+	border-radius: $border-radius-md;
+	height: 48px;
+	margin-right: 12px;
+	padding: 0;
+	width: 48px;
+
+	-webkit-appearance: none;
+	cursor: pointer;
+
+	transition: box-shadow $transition-short;
+
+	&::-webkit-color-swatch-wrapper {
+		border-radius: $border-radius-md;
+		padding: 0;
+	}
+	&::-webkit-color-swatch {
+		border: none;
+		border-radius: $border-radius-md;
+	}
+
+	&:focus {
+		box-shadow: $shadow-focus;
+		outline: none;
+	}
+}

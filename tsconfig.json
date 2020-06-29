@@ -1,0 +1,17 @@
+{
+	"include": ["."],
+	"exclude": ["src"],
+
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "ES2019",
+
+		"allowJs": false,
+		"allowSyntheticDefaultImports": true,
+		"allowUnreachableCode": false,
+		"esModuleInterop": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true
+	}
+}

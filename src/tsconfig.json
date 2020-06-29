@@ -1,0 +1,29 @@
+{
+	"include": ["."],
+
+	"compilerOptions": {
+		"module": "esnext",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"target": "ES2019",
+
+		"lib": ["DOM", "ES2019"],
+
+		"allowJs": false,
+		"allowSyntheticDefaultImports": true,
+		"allowUnreachableCode": false,
+		"esModuleInterop": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+
+		"jsx": "react",
+		"jsxFactory": "h",
+
+		"baseUrl": ".",
+		"paths": {
+			"@utils/*": ["./utils/*"],
+			"@components": ["./components"]
+		}
+	}
+}

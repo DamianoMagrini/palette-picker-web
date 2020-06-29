@@ -1,0 +1,16 @@
+@import '../../theme';
+
+.container {
+	display: flex;
+	position: fixed;
+
+	align-items: center;
+	justify-content: space-between;
+
+	height: 60px;
+	padding: 6px 36px;
+	width: 100vw;
+
+	background-color: rgba(var(--color-6), 1);
+	box-shadow: $shadow-i1;
+}

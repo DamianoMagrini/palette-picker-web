@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+
+	// For UI debugging purposes:
+	// background-color: rgba(255, 255, 0, 0.05);
+	// outline: 1px solid rgba(240, 200, 0, 1) !important;
+
+	&::selection {
+		background-color: rgba(var(--color-5), 0.333);
+	}
+}

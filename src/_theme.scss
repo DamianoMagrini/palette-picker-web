@@ -1,0 +1,25 @@
+$font-stack-display: 'Space Mono', SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+$font-stack-body: 'PT Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+	'Helvetica Neue', sans-serif;
+
+$transition-flash: 100ms ease-out;
+$transition-short: 150ms ease-out;
+$transition-medium: 200ms cubic-bezier(0.5, 0.5, 0.6, 1);
+$transition-long: 300ms ease-in-out;
+
+// xs omitted: it should be the default style, from 0px.
+$breakpoint-sm: 600px;
+$breakpoint-md: 960px;
+$breakpoint-lg: 1080px;
+$breakpoint-xl: 1920px;
+
+$border-radius-sm: 2px;
+$border-radius-md: 4px;
+$border-radius-lg: 8px;
+$border-radius-xl: 16px;
+
+$shadow-focus: 0 0 0 2px rgba(var(--color-3), 0.5);
+
+$shadow-i1: 0 4px 18px rgba(var(--color-2), 0.1);
+$shadow-i2: 0 8px 24px rgba(var(--color-2), 0.1);
+$shadow-i3: 0 12px 48px rgba(var(--color-2), 0.075);

@@ -1,0 +1,31 @@
+@import '../../theme';
+
+.wrapper {
+	display: grid;
+
+	grid-template-areas: 'input' 'output' 'output';
+	overflow: hidden;
+
+	border-radius: $border-radius-lg;
+	margin: 96px 0;
+	width: 100%;
+
+	box-shadow: $shadow-i3;
+
+	@media (min-width: $breakpoint-lg) {
+		grid-template-areas: 'input output output';
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.input {
+	grid-area: input;
+	padding: 24px 54px;
+
+	background-color: rgba(var(--color-6), 1);
+}
+
+.output {
+	grid-area: output;
+	padding: 24px 54px;
+}
