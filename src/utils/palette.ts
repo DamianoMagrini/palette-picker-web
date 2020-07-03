@@ -30,10 +30,8 @@ const rotate_hue = (hue: number, target: HUE_ROTATION_TARGET, step: number): num
 
 	// Check which hue is closest *and* more than a step away (both false if the hue is less than a step away from the
 	// closest).
-	const light_hue_is_closest =
-		Math.abs(hue - closest_light_hue) > Math.abs(hue - closest_dark_hue) + step * Math.sign(closest_light_hue - hue);
-	const dark_hue_is_closest =
-		Math.abs(hue - closest_dark_hue) > Math.abs(hue - closest_light_hue) + step * Math.sign(closest_dark_hue - hue);
+	const light_hue_is_closest = Math.abs(hue - closest_light_hue) + step < Math.abs(hue - closest_dark_hue);
+	const dark_hue_is_closest = Math.abs(hue - closest_dark_hue) + step < Math.abs(hue - closest_light_hue);
 
 	// I don't remember how this works.
 	// But, hey, it works.
